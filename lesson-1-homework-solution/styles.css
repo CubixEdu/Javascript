@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.not-done {
+    color: red;
+}
+
+p {
+    font-weight: bold;
+}
+
+.percentage {
+    font-weight: normal;
+}

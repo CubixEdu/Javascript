@@ -1,0 +1,23 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#duration {
+    margin: 20px 0;
+}
+
+#duration-title {
+    font-weight: bold;
+}
+
+.lesson {
+    margin: 5px 0;
+}
+
+button {
+    border-radius: 5px;
+    border-color: transparent;
+    background-color: lightskyblue;
+    padding: 5px;
+    color: white;
+}
