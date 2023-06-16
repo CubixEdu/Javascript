@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="app.js" type="module"></script>
+    </head>
+
+    <body>
+        <h2>Todo list</h2>
+        
+        <div id="todo-list">
+        </div>
+        <br>
+        
+        <div>
+            <input type="text" placeholder="Name" id="new-item-name">
+            <input type="number" placeholder="Difficulty" id="new-item-difficulty">
+            <button id="new-item-save">Save</button>
+        </div>
+        <br>
+
+        <div>
+            <span><strong>Order:</strong></span>
+            <button id="btn-asc">Ascending</button>
+            <button id="btn-dsc">Descending</button>
+        </div>
+        <br>
+
+        <div>
+            <span><strong>Most difficult item:</strong></span>
+            <span id="most-difficult-item"></span>
+        </div>
+
+        <p>Completed: <span id="percentage"></span></p>
+    </body>
+</html>
