@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>&lt;my-element> Demo</title>
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="../node_modules/lit/polyfill-support.js"></script>
+    <script type="module" src="../my-element.js"></script>
+    <script type="module" src="../cubix-list.js"></script>
+    <script type="module" src="../cubix-list-2.js"></script>
+    <script type="module" src="../cubix-list-3.js"></script>
+    <style>
+      p {
+        border: solid 1px blue;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <cubix-list item1="Verstappen" item2="Hamilton" item3="Bottas"></cubix-list>
+
+    <cubix-list-2 item1="Verstappen" item2="Hamilton" item3="Bottas">
+      <div style="color: blue;" slot="item1">Verstappen</div>
+      <div style="color: turquoise;" slot="item2">Hamilton</div>
+      <div style="color: turquoise;" slot="item3">Bottas</div>
+    </cubix-list-2>
+
+    <!-- <cubix-list-3 items="['Verstappen', 'Hamilton', 'Bottas']">
+    </cubix-list-3> -->
+  </body>
+</html>
