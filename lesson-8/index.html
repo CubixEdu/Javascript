@@ -1,38 +1,69 @@
-<html>
-    <head>
-        <script src="bundle.js" type="module"></script>
-        <title>JavaScript Weather Application</title>
-    </head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather application</title>
+  </head>
+  <body>
+    <div class="header">
+      <h2>JavaScript Weather Application</h2>
+    </div>
 
-    <body>
-        <div class="header">
-            <h1>JavaScript Weather Application</h1>
+    <div class="content">
+      <div class="search-bar">
+        <form action="">
+          <div id="city" class="form-item">
+            <input type="text" placeholder="City" />
+          </div>
+
+          <div id="date" class="form-item">
+            <input type="date" />
+          </div>
+
+          <div class="horizontal-spacer"></div>
+
+          <div class="actions">
+            <button type="submit">Search</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="weather-container">
+        <div class="weather-card">
+          <p>Weather data</p>
         </div>
-
-        <div class="search-bar">
-            <div class="form-container">
-                <form action="" id="weather-form">
-                    <div id="city" class="form-item">
-                        <input id="city-input" required type="text" placeholder="City">
-                    </div>
-
-                    <div id="date" class="form-item">
-                        <input id="date-input" required type="date">
-                    </div>
-
-                    <div class="horizontal-spacer"></div>
-
-                    <div>
-                        <button type="reset">X</button>
-                        <button id="submit" type="submit">Search</button>
-                    </div>
-                </form>
-            </div>
+        <div class="weather-card">
+          <p>Weather data</p>
         </div>
-
-        <div class="content">
-            <div id="error-message" style="display: none;">Error while retrieving weather data</div>
-            <div id="cards-container"></div>
+        <div class="weather-card">
+          <p>Weather data</p>
         </div>
-    </body>
+        <div class="weather-card">
+          <p>Weather data</p>
+        </div>
+        <div class="weather-card">
+          <p>Weather data</p>
+        </div>
+        <div class="weather-card">
+          <p>Weather data</p>
+        </div>
+        <div class="weather-card">
+          <p>Weather data</p>
+        </div>
+        <div class="weather-card">
+          <p>Weather data</p>
+        </div>
+        <div class="weather-card">
+          <p>Weather data</p>
+        </div>
+        <div class="weather-card">
+          <p>Weather data</p>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>

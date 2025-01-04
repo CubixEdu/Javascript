@@ -27,7 +27,7 @@ testAwait();
 
 const testRequest = async () => {
     try {
-        const res = await fetch('https://api.geadscnderize.io/?name=peter');
+        const res = await fetch('https://api.genderize.io/?name=peter');
         const parsedRes = await res.json();
         console.log(parsedRes);
     } catch (e) {
