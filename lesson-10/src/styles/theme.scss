@@ -1,0 +1,29 @@
+:root {
+  --background-color: #f4f4f4;
+
+  --primary-font-color: #242424;
+  --primary-font-color-inverse: #e2e2e2;
+
+  --primary-color-50: #e3c75f;
+  --primary-color-800: #cc8d1a;
+
+  --secondary-color-50: #36776e;
+  --secondary-color-800: #164c45;
+}
+
+$primary-color: (
+  50: var(--primary-color-50),
+  800: var(--primary-color-800),
+);
+
+$secondary-color: (
+  50: var(--secondary-color-50),
+  800: var(--secondary-color-800),
+);
+
+$primary-font-color: var(--primary-font-color);
+$primary-font-color-inverse: var(--primary-font-color-inverse);
+$background-color: var(--background-color);
+
+$gap-normal: 16px;
+$box-shadow: 3px 0 10px 1px rgba(0, 0, 0, 0.2);

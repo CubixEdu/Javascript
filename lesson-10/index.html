@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <title>Weather application</title>
+  </head>
+  <body>
+    <div class="header">
+      <h2>JavaScript Weather Application</h2>
+
+      <div class="actions">
+        <!-- light_mode -->
+        <span id="dark-mode-switch" class="material-symbols-outlined">
+          dark_mode
+        </span>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="search-bar">
+        <form action="" id="weather-form">
+          <div id="city" class="form-item">
+            <input type="text" required id="city-input" placeholder="City" />
+          </div>
+
+          <div id="date" class="form-item">
+            <input type="date" required id="date-input" />
+          </div>
+
+          <div class="horizontal-spacer"></div>
+
+          <div class="actions">
+            <button type="reset">X</button>
+            <button id="submit-btn" type="submit">Search</button>
+          </div>
+        </form>
+      </div>
+
+      <div id="error-message" style="display: none">
+        Error while retrieving weather data
+      </div>
+
+      <div id="weather-container" class="weather-container"></div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

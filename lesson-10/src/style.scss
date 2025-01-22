@@ -1,0 +1,171 @@
+@use './styles/loading.scss';
+@use './styles/theme.scss';
+@use 'sass:map';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: theme.$background-color;
+
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &.dark {
+    .content {
+      .search-bar {
+        form {
+          input {
+            background-color: map.get(theme.$primary-color, 50);
+
+            &::placeholder {
+              color: theme.$primary-font-color-inverse;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 theme.$gap-normal;
+  background-color: map.get(theme.$primary-color, 800);
+  box-shadow: theme.$box-shadow;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-y: auto;
+  padding: theme.$gap-normal;
+
+  > .search-bar {
+    align-self: center;
+
+    display: flex;
+    align-items: center;
+
+    width: 70vw;
+    min-width: 300px;
+    max-width: 90vw;
+
+    padding: theme.$gap-normal;
+    border-radius: 32px;
+
+    background-color: color-mix(
+      in oklab,
+      map.get(theme.$primary-color, 800) 80%,
+      transparent
+    );
+    box-shadow: theme.$box-shadow;
+
+    form {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: theme.$gap-normal;
+
+      #city {
+        flex: 3 1 auto;
+
+        input {
+          width: 100%;
+        }
+      }
+
+      input {
+        $size: 32px;
+
+        height: $size;
+        line-height: $size;
+        border: 1px solid map.get(theme.$primary-color, 800);
+        border-radius: 4px;
+        padding: 0 8px;
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+
+      > .actions {
+        display: flex;
+        gap: theme.$gap-normal;
+      }
+    }
+  }
+}
+
+button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  background: none;
+  background-color: map.get(theme.$secondary-color, 800);
+  color: theme.$primary-font-color-inverse;
+  border-radius: 8px;
+  padding: 8px 16px;
+  border: 0;
+
+  &:hover {
+    background-color: theme.$primary-font-color;
+  }
+
+  &:focus {
+    background-color: map.get(theme.$primary-color, 800);
+    color: theme.$primary-font-color;
+  }
+}
+
+.weather-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: theme.$gap-normal;
+  padding: theme.$gap-normal;
+
+  > .weather-card {
+    width: 350px;
+    height: 400px;
+    text-align: center;
+    border: 2px solid map.get(theme.$primary-color, 800);
+    border-radius: 24px;
+    padding: theme.$gap-normal;
+    background-color: map.get(theme.$secondary-color, 800);
+    color: theme.$primary-font-color-inverse;
+    box-shadow: theme.$box-shadow;
+
+    > p {
+      font-size: 48px;
+    }
+  }
+}
+
+.horizontal-spacer {
+  flex: 1;
+}
+
+.loader-container {
+  width: 100%;
+  text-align: center;
+}
+
+#error-message {
+  text-align: center;
+  background-color: #c62828;
+  color: theme.$primary-font-color-inverse;
+  font-size: 18px;
+  padding: theme.$gap-normal;
+  margin: theme.$gap-normal;
+  border-radius: 16px;
+}
