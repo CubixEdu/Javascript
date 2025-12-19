@@ -1,3 +1,5 @@
-import './styles.scss';
+import { initPosts } from "./posts.js"
 
-console.log('Hello world')
+document.addEventListener('DOMContentLoaded', () => {
+    initPosts();
+})

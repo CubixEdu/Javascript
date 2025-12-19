@@ -1,0 +1,153 @@
+:root {
+    --font-family: Arial, Helvetica, sans-serif;
+    --primary-font-color: #242424;
+    --primary-color: #5d9930;
+    --border-color: #747474;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    margin: 16px;
+    color: var(--primary-font-color);
+  }
+  
+  h1 {
+    margin-bottom: 0;
+  }
+  
+  .container {
+    padding: 16px 0 16px 0;
+  }
+  
+  .form-item {
+    margin-bottom: 24px;
+  }
+  
+  label {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  
+  input {
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    border: 2px solid #747474;
+    border-radius: 8px;
+  }
+  
+  textarea {
+    width: 100%;
+    line-height: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid #747474;
+    border-radius: 8px;
+  }
+  
+  input {
+    height: 24px;
+  }
+  
+  textarea {
+    font-family: var(--font-family);
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    line-height: 24px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px green;
+    background-color: rgba(200, 200, 200, 0.2);
+  }
+  
+  @media screen and (min-width: 992px) {
+    input,
+    textarea {
+      width: 450px;
+    }
+  }
+  
+  a {
+    text-decoration: none;
+    color: #506ad4;
+    font-size: 80%;
+    display: inline-block;
+  }
+  
+  button {
+    background: none;
+    background-color: #5d9930;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    padding: 6px 16px;
+    font-size: 16px;
+    margin: 8px 0;
+    color: white;
+  }
+  
+  button:hover {
+    color: #242424;
+    background-color: rgba(93, 153, 48, 0.4);
+  }
+  
+  button:focus {
+    outline: none;
+    border: 2px solid green;
+  }
+  
+  #image-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .homework {
+    width: calc(100% - 4px);
+    border: 2px solid black;
+    border-radius: 12px;
+    text-align: center;
+    padding: 16px;
+    margin-left: -16px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    .homework {
+        width: 80%;
+    }
+  }
+
+  .homework-images {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .homework-images img {
+    width: 40%;
+  }
+
+  .homework-list > li {
+    border-bottom: 1px solid black;
+  }
+
+  .homework-list > li:first-of-type {
+    border-top: 2px solid black;
+  }
+
+  .homework-list > li:last-of-type {
+    border-bottom: 2px solid black;
+  }
+
+  .homework-list > li:nth-child(2n) {
+    background-color: green;
+  }
+
+  .homework-list > li:nth-child(2n+1) {
+    background-color: red;
+  }

@@ -1,31 +1,13 @@
 <html>
     <head>
-        <script src="app.js" type="module"></script>
         <link rel="stylesheet" href="styles.css">
+        <script src="app.js" type="module"></script>
     </head>
 
     <body>
-        <div class="create-post">
-            <input id="new-post-id" placeholder="Id" type="text">
-            <input id="new-post-title" placeholder="Title" type="text">
-            <input id="new-post-body" placeholder="Body" type="text">
-            <button id="send-btn">Send</button>
+        <h2>Todo list</h2>
+        <div id="todo-list">
         </div>
-
-        <div class="post">
-            <h2>Post</h2>
-            <p>Title: <span id="post-title"></span></p>
-            <p>Body: <span id="post-body"></span></p>
-        </div>
-
-        <div class="post-list">
-            <h2>Posts list</h2>
-            <div id="posts"></div>
-        </div>
-
-        <div class="details">
-            <h2>Post details</h2>
-            <div id="post-details"></div>
-        </div>
+        <p>Completed: <span id="percentage"></span></p>
     </body>
 </html>

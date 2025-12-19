@@ -1,38 +1,58 @@
 <html>
     <head>
-        <script src="bundle.js" type="module"></script>
-        <title>JavaScript Weather Application</title>
+        <script src="app.js" type="module"></script>
+        <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
         <div class="header">
-            <h1>JavaScript Weather Application</h1>
-        </div>
-
-        <div class="search-bar">
-            <div class="form-container">
-                <form action="" id="weather-form">
-                    <div id="city" class="form-item">
-                        <input id="city-input" required type="text" placeholder="City">
-                    </div>
-
-                    <div id="date" class="form-item">
-                        <input id="date-input" required type="date">
-                    </div>
-
-                    <div class="horizontal-spacer"></div>
-
-                    <div>
-                        <button type="reset">X</button>
-                        <button id="submit" type="submit">Search</button>
-                    </div>
-                </form>
-            </div>
+            <ul class="menu">
+                <li>Home</li>
+                <li>Contact</li>
+            </ul>
+            <button>Profile</button>
         </div>
 
         <div class="content">
-            <div id="error-message" style="display: none;">Error while retrieving weather data</div>
-            <div id="cards-container"></div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1587262538177-842ad13e290c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80" alt="">
+                <h4>The Forgotten Diary</h4>
+                <p>
+                    In an old attic, Emma discovered a dusty diary. As she delved into its pages, she unraveled a captivating tale of love, betrayal, and redemption. The diary's owner, Elizabeth, had lived a life shrouded in mystery, and Emma was determined to uncover the truth. With every turn of the page, Emma became entangled in Elizabeth's world, unaware of the impact it would have on her own life.
+                </p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80" alt="">
+                <h4>The Enchanted Forest</h4>
+                <p>
+                    Lost in the depths of an enchanted forest, Sarah stumbled upon a hidden realm filled with mythical creatures and magic. As she navigated the treacherous terrain, she encountered a wise old wizard who revealed a prophecy about her destiny. With newfound courage, Sarah embarked on a quest to save the enchanted forest from impending doom, discovering her own extraordinary powers along the way.
+                </p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1447015237013-0e80b2786ddc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80" alt="">
+                <h4>The Time Traveler's Locket</h4>
+                <p>
+                    When Lucas stumbled upon an intricately designed locket, he never expected it would transport him through time. Each time he opened the locket, he found himself in a different era, witnessing significant moments in history firsthand. With the power to alter the course of events, Lucas faced the dilemma of whether to change the past or preserve the future, all while grappling with the consequences of his actions.
+                </p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1530576020503-abf1de0889a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2352&q=80" alt="">
+                <h4>The Mysterious Island</h4>
+                <p>
+                    After surviving a shipwreck, Olivia found herself stranded on a seemingly uninhabited island. As she explored its lush landscapes, she discovered remnants of a forgotten civilization. Olivia's curiosity led her to unravel the island's secrets, unearthing a hidden treasure and a map that promised unimaginable riches. However, she soon realized that the true treasure lay not in material wealth but in the friendships she forged along the way.
+                </p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1565733746251-8aeafadb30fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80" alt="">
+                <h4>The Art of Serendipity</h4>
+                <p>
+                    In the bustling city of Paris, two strangers, Sophie and Julien, had their paths unexpectedly cross. Drawn together by a series of serendipitous events, they embarked on a whirlwind adventure that challenged their perceptions of love and destiny. Through chance encounters and unexpected detours, Sophie and Julien learned that sometimes the most extraordinary moments in life can arise from the simplest of encounters.
+                </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Frontend Development with JavaScript</p>
         </div>
     </body>
 </html>

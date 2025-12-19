@@ -1,30 +1,32 @@
-const callACatInside = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        resolve('Kitty');
-    }, 300)
-});
+document.addEventListener('DOMContentLoaded', () => {
+    registerSubmitBtn();
+    registerListNumberChange();
+    renderSendCounter();
+})
 
-callACatInside
-    .then(cat => console.log(cat))
-    .catch(error => console.error(error));
+const registerSubmitBtn = () => {
+    document.getElementById('sendBtn').addEventListener('click', () => {
+        document.getElementById('feedback').value = '';
 
-const waitForACat = async () => {
-    try {
-        const cat = await callACatInside;
-        console.log(cat);
-    } catch(e) {
-        console.error(e);
-    }
+        let sendCounter = localStorage.getItem('sendCounter') || 0;
+        localStorage.setItem('sendCounter', ++sendCounter) ;
 
+        renderSendCounter();
+    })
 }
 
-waitForACat();
-
-const genderizeName = async (name) => {
-    const response = await fetch(`https://api.genderize.io/?name=${name}`);
-    const jsonObject = await response.json();
-
-    console.log(jsonObject);
+const renderSendCounter = () => {
+    document.getElementById('sendCounter').innerText = localStorage.getItem('sendCounter') || 0;
 }
 
-genderizeName('Peter');
+const registerListNumberChange = () => {
+    document.getElementById('listNumber').addEventListener('change', (event) => {
+        const number = event.target.value;
+        const listElement = document.getElementById('list');
+        listElement.innerHTML = '';
+
+        for(let i = 0; i < number; i++) {
+            listElement.innerHTML += `<li>${i}. elem</li>`;
+        }
+    })
+}

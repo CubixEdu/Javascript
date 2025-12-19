@@ -1,5 +1,5 @@
-import { initPosts } from "./posts.js"
+import { initTodos } from "./todos.js";
 
 document.addEventListener('DOMContentLoaded', () => {
-    initPosts();
-})
+    initTodos();
+});

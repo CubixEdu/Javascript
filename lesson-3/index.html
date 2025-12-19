@@ -1,6 +1,36 @@
 <html>
-    <head>
-        <script src="app.js" type="module"></script>
-    </head>
-    <body></body>
+
+<head>
+  <title>Feedback form</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js"></script>
+</head>
+
+<body>
+    <h1>Send us your feedback</h1>
+    
+    <div>
+      <p>Your opinion is important to us, please leave a few words below.</p>
+      <div class="form-item">
+        <label>E-mail</label><br />
+        <input type="email" />
+      </div>
+      <div class="form-item">
+        <label>Feedback</label><br />
+        <textarea id="feedback" rows="10"></textarea>
+      </div>
+      <a href="https://i.gifer.com/Wn2j.gif" target="_blank">Privacy notice</a
+      ><br />
+      <button id="sendBtn">Send</button><br />
+      <div id="image-container">
+        <img src="https://i.gifer.com/Wn2j.gif" />
+      </div>
+    </div>
+
+    <p>Send counter: <span id="sendCounter"></span></p>
+    <br>
+    <input type="number" name="" id="listNumber">
+    <ul id="list"></ul>
+</body>
+
 </html>

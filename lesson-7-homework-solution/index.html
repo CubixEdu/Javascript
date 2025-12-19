@@ -1,36 +1,31 @@
 <html>
     <head>
-        <script src="bundle.js" type="module"></script>
-        <title>JavaScript Weather Application</title>
+        <script src="app.js" type="module"></script>
+        <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
-        <div class="header">
-            <h1>JavaScript Weather Application</h1>
+        <div class="create-post">
+            <input id="new-post-id" placeholder="Id" type="text">
+            <input id="new-post-title" placeholder="Title" type="text">
+            <input id="new-post-body" placeholder="Body" type="text">
+            <button id="send-btn">Send</button>
         </div>
 
-        <div class="search-bar">
-            <div class="form-container">
-                <form action="">
-                    <div id="city" class="form-item">
-                        <input type="text" placeholder="City">
-                    </div>
-
-                    <div id="date" class="form-item">
-                        <input type="date">
-                    </div>
-
-                    <div class="horizontal-spacer"></div>
-
-                    <div>
-                        <button type="submit">Search</button>
-                    </div>
-                </form>
-            </div>
+        <div class="post">
+            <h2>Post</h2>
+            <p>Title: <span id="post-title"></span></p>
+            <p>Body: <span id="post-body"></span></p>
         </div>
 
-        <div class="content">
+        <div class="post-list">
+            <h2>Posts list</h2>
+            <div id="posts"></div>
+        </div>
 
+        <div class="details">
+            <h2>Post details</h2>
+            <div id="post-details"></div>
         </div>
     </body>
 </html>

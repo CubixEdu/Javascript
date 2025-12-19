@@ -1,21 +1,82 @@
 <html>
     <head>
-        <title>Frontend development with JavaScript</title>
-        <script src="./index.js" type="module"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./styles.css">
+        <title>Homework</title>
+        <meta charset="utf-8">
     </head>
+
     <body>
-        <h1>Frontend development with JavaScript</h1>
-
-        <div id="lessons"></div>
-
-        <div id="duration">
-            <span id="duration-title">Total duration:</span>
-            <span id="total-duration"></span>
+        <h1>Hiking in High Tatras</h1>
+        <div>
+            <img width="500px" src="https://images.unsplash.com/photo-1514551760785-67a2add48b4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2346&q=80" alt="">
         </div>
-        <button id="save-button">Save</button>
+        
+        <div>
+            <h2>Don't forget to bring</h2>
+            <ul>
+                <li>Water</li>
+                <li>Closed shoes</li>
+                <li>Tick repellent</li>
+                <li>Food</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Hiking trail</h2>
+            <ol>
+                <li>Start on the <code>blue</code> sign</li>
+                <li>Change to the <code>red</code> sign at the creek</li>
+            </ol>
+        </div>
+
+        <div>
+            <h2>Guided hiking schedules</h2>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>
+                        1. tour
+                    </th>
+                    <th>
+                        2. tour
+                    </th>
+                </tr>
+                <tr>
+                    <td><strong>Departure</strong></td>
+                    <td>8:30</td>
+                    <td>10:30</td>
+                </tr>
+                <tr>
+                    <td><strong>Arrival</strong></td>
+                    <td>12:30</td>
+                    <td>14:30</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h2>More hiking trails</h2>
+            <!-- <p>&#8594; Balatoni túrák</p>
+            <p>&#8594; Kékestető</p> -->
+
+            <ul style="list-style-type: disclosure-closed;">
+                <li>Hiking at Balaton</li>
+                <li>Triglav</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>News letter</h2>
+            <div>
+                <label for="email">E-mail</label>
+                <input id="email" type="text" />
+            </div>
+            <div>
+                <label for="pp">Privacy policy</label>
+                <input id="pp" type="checkbox">
+            </div>
+            <div>
+                <button>Subscribe</button>
+            </div>
+        </div>
     </body>
 </html>
